@@ -25,6 +25,7 @@ int main(void){
 void mergeSort(int num[], int length){
 	int *helper = new int[length];
 	mergeSort(num, helper, 0, length-1);
+	delete helper;
 }
 
 void mergeSort(int num[], int helper[], int low, int high){
